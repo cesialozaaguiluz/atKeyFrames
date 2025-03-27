@@ -354,6 +354,72 @@ transform-origin: 100% 0%;
                 transform: rotate(0deg);
             }
         }
+
+        .text5 {
+            position: relative;
+            animation: geeks5 10s infinite;
+            animation-play-state: running;
+        }
+        
+        @keyframes geeks5 {
+            0% {
+                width: 250px;
+                background: #bf7b00;
+                height: 100px;
+                padding: 5%;
+            }
+
+            15%{
+                width: 250px;
+                background: #bf7b00;
+                height: 100px;
+                border-radius: 50%;
+            }
+
+            25%{
+                width: 250px;
+                background: #46bf00;
+                height: 100px;
+            }
+
+            35%{
+                width: 250px;
+                background: #00bf7f;
+                height: 100px;
+            }
+
+            50%{
+                width: 250px;
+                background: #00bf7f;
+                height: 100px;
+            }
+
+            65%{
+                width: 250px;
+                background: #46bf00;
+                height: 100px;
+                color: #4400ff;
+            }
+
+            75%{
+                width: 250px;
+                background: #bf7b00;
+                height: 100px;
+            }
+
+            85%{
+                width: 250px;
+                background: #bf7b00;
+                height: 100px;   
+            }
+
+            100%{
+                width: 250px;
+                background: #bf7b00;
+                height: 100px;
+            }
+
+        }
     </style>
 </head>
 <body>
@@ -381,7 +447,7 @@ transform-origin: 100% 0%;
     </div>
 
     <div style="background: orange; width: 100%; text-align: center;padding: 100px 0;">
-        <div style="display:inline-block; font-size: 50px;">Footer</div>
+        <div style="display:inline-block; font-size: 50px;" class="text5">Footer</div>
         <div style="display:inline-block;align-items: center; width:200px; height:100px; background: green"></div>
     </div>
     <div style="background: red; width: 100%; text-align: center;padding: 5px 0;">
