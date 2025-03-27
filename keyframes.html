@@ -56,7 +56,7 @@ transform-origin: 100% 0%;
 
 .text2 {
             position: relative;
-            animation: geeks2 5s infinite;
+            animation: geeks2 10s infinite;
             animation-play-state: running
         }
 
@@ -101,9 +101,50 @@ transform-origin: 100% 0%;
             }
         }
 
+        .whitebox {
+            display:inline-block;
+            align-items: center;
+            width:180px;
+            height:80px;
+            background: white;
+            animation: whiterect 10s infinite;
+            animation-play-state: running;
+            transform-origin: right
+        }
+
+        @keyframes whiterect {
+            0% {
+                transform: rotate(-90deg);
+            }
+
+            15% {
+                transform: rotate(0deg);
+            }
+
+            25%{
+                transform: rotate(-90deg);
+            }
+
+            35%{
+                transform: rotate(-100deg);
+            }
+
+            50%{
+                transform: rotate(-40deg);
+            }
+
+            75%{
+                transform: rotate(0deg);
+            }
+
+            100%{
+                transform: rotate(-90deg);
+            }
+        }
+
         .text3 {
             position: relative;
-            animation: geeks 7s infinite;
+            animation: geeks 10s infinite;
             animation-play-state: running;
         }
         
@@ -192,28 +233,93 @@ transform-origin: 100% 0%;
             }
 
             25%{
-                background: #ffe600;
                 transform: rotate(25deg);
             }
 
             35%{
-                background: #ffe600;
                 color: white;
                 transform: rotate(-10deg);
             }
 
             50%{
-                background: #ffbb00;
                 color: white;
-                transform: rotate(50deg);
+                transform: rotate(30deg);
             }
 
             75%{
+                transform: rotate(50deg);
             }
 
             100%{
                 transform: rotate(90deg);
             }
+        }
+
+        .text4 {
+            position: relative;
+            animation: geeks4 10s infinite;
+            animation-play-state: running;
+        }
+        
+        @keyframes geeks4 {
+            0% {
+                width: 200px;
+                background: #a40000;
+                height: 60px;
+            }
+
+            15%{
+                width: 200px;
+                background: #5f0000;
+                height: 60px;
+                color: #ffffff;
+            }
+
+            25%{
+                width: 200px;
+                background: #5f0000;
+                height: 60px;
+                border-radius: 20%;
+            }
+
+            35%{
+                width: 200px;
+                background: #380000;
+                height: 60px;
+            }
+
+            50%{
+                width: 200px;
+                background: #a40000;
+                height: 60px;
+            }
+
+            65%{
+                width: 200px;
+                background: #ff853e;
+                height: 60px;
+            }
+
+            75%{
+                width: 200px;
+                background: #ff853e;
+                height: 60px;
+                border-radius: 20%;
+            }
+
+            85%{
+                width: 200px;
+                background: #ffbb3e;
+                height: 60px;
+            }
+
+            100%{
+                width: 200px;
+                background: #ffbb3e;
+                height: 60px;
+            }
+
+        
         }
     </style>
 </head>
@@ -226,7 +332,7 @@ transform-origin: 100% 0%;
 
     <div style="background: green; width: 100%; text-align: center; align-items: center;padding: 200px 0;">
         <div style="display:inline-block;font-size: 50px;" class="text2">Place For Introdctory Image/Video</div>
-        <div style="display:inline-block;align-items: center; width:180px; height:80px; background: white"></div>
+        <div style="display:inline-block;align-items: center; width:180px; height:80px; background: white" class="whitebox"></div>
     </div>
 
     <div style="background: blue; width: 50%; float: right; text-align: center;padding: 200px 0;">
@@ -237,8 +343,8 @@ transform-origin: 100% 0%;
 
     <div style="background: red; width: 50%; text-align: center;padding: 200px 0;">
         <div style="display:inline-block;
-        font-size: 50px;">Section 3</div>
-        <div style="display:inline-block;align-items: center; width:100px; height:30px; background: purple"></div>
+        font-size: 50px;" class="text4">Section 3</div>
+        <div style="display:inline-block;align-items: center; width:100px; height:30px; background: purple" class="purplebox"></div>
     </div>
 
     <div style="background: orange; width: 100%; text-align: center;padding: 100px 0;">
