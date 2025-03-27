@@ -237,12 +237,10 @@ transform-origin: 100% 0%;
             }
 
             35%{
-                color: white;
                 transform: rotate(-10deg);
             }
 
             50%{
-                color: white;
                 transform: rotate(30deg);
             }
 
@@ -319,7 +317,42 @@ transform-origin: 100% 0%;
                 height: 60px;
             }
 
-        
+        }
+
+        .purplebox {
+            animation: purplerect 7s infinite;
+            animation-play-state: running;
+            transform-origin: top left;
+        }
+
+        @keyframes purplerect {
+            0% {
+                transform: rotate(90deg);
+            }
+
+            15% {
+                transform: rotate(100deg);
+            }
+
+            25%{
+                transform: rotate(60deg);
+            }
+
+            35%{
+                transform: rotate(45deg);
+            }
+
+            50%{
+                transform: rotate(30deg);
+            }
+
+            75%{
+                transform: rotate(100deg);
+            }
+
+            100%{
+                transform: rotate(0deg);
+            }
         }
     </style>
 </head>
@@ -344,7 +377,7 @@ transform-origin: 100% 0%;
     <div style="background: red; width: 50%; text-align: center;padding: 200px 0;">
         <div style="display:inline-block;
         font-size: 50px;" class="text4">Section 3</div>
-        <div style="display:inline-block;align-items: center; width:100px; height:30px; background: purple" class="purplebox"></div>
+        <div style="display:inline-block; align-items: center; width:100px; height:30px; background: purple" class="purplebox"></div>
     </div>
 
     <div style="background: orange; width: 100%; text-align: center;padding: 100px 0;">
