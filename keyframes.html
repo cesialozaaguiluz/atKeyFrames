@@ -519,6 +519,51 @@ transform-origin: 100% 0%;
             }
 
         }
+
+        .bluebox {
+            animation: bluerect 7s infinite;
+            animation-play-state: running;
+            transform: translateX(1);
+            transition: transform 0.5s ease;
+            transform-origin: bottom right;
+        }
+
+        @keyframes bluerect {
+            0% {
+                transform: translateX(2em);
+                transform: rotate(0deg)
+            }
+
+            15% {
+                transform: translateX(-2em);
+                transform: rotate(-40deg)
+            }
+
+            25%{
+                transform: translateX(2em);
+                transform: rotate(0deg)
+            }
+
+            35%{
+                transform: translateX(-2em);
+                transform: rotate(-40deg)
+            }
+
+            50%{
+                transform: translateX(2em);
+                transform: rotate(0deg)
+            }
+
+            75%{
+                transform: translateX(-2em);
+                transform: rotate(-40deg)
+            }
+
+            100%{
+                transform: translateX(2em);
+                transform: rotate(0deg)
+            }
+        }
     </style>
 </head>
 <body>
@@ -553,7 +598,7 @@ transform-origin: 100% 0%;
     <div style="background: red; width: 100%; text-align: center;padding: 5px 0;">
         <div style="display:inline-block;
         font-size: 50px;" class="text6">navbar</div>
-        <div style="display:inline-block;align-items: center; width:30px; height:200px; background: blue"></div>
+        <div style="display:inline-block;align-items: center; width:30px; height:200px; background: blue" class="bluebox"></div>
     </div>
     <div style="background: green; width: 100%; text-align: center;padding: 200px 0;">
         <div style="display:inline-block;font-size: 50px;">Place For Introdctory Image/Video</div>
