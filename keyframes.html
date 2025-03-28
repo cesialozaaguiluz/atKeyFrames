@@ -459,6 +459,66 @@ transform-origin: 100% 0%;
             }
         }
 
+        .text6 {
+            position: relative;
+            animation: geeks6 10s infinite;
+            animation-play-state: running;
+        }
+        
+        @keyframes geeks6 {
+            0% {
+                width: 250px;
+                height: 50px;
+                background-color: #b20000;
+            }
+
+            15%{
+                width: 250px;
+                height: 100px;
+            }
+
+            25%{
+                width: 250px;
+                height: 100px;
+            }
+
+            35%{
+                width: 250px;
+                height: 100px;
+            }
+
+            50%{
+                width: 250px;
+                height: 50px;
+                background-color: #00aeff;
+                color: #f700ff;
+            }
+
+            65%{
+                width: 250px;
+                height: 100px;
+                background-color: #b20000;
+            }
+
+            75%{
+                width: 250px;
+                height: 100px;
+                background-color: #b20000;
+            }
+
+            85%{
+                width: 250px;
+                height: 100px;
+                background-color: #b20000;
+            }
+
+            100%{
+                width: 250px;
+                height: 50px;
+                background-color: #b20000;
+            }
+
+        }
     </style>
 </head>
 <body>
@@ -492,7 +552,7 @@ transform-origin: 100% 0%;
 
     <div style="background: red; width: 100%; text-align: center;padding: 5px 0;">
         <div style="display:inline-block;
-        font-size: 50px;">navbar</div>
+        font-size: 50px;" class="text6">navbar</div>
         <div style="display:inline-block;align-items: center; width:30px; height:200px; background: blue"></div>
     </div>
     <div style="background: green; width: 100%; text-align: center;padding: 200px 0;">
