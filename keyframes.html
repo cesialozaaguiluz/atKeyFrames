@@ -728,6 +728,142 @@ transform-origin: 100% 0%;
 
         }
 
+    .redbox {
+            animation: redrect 7s infinite;
+            animation-play-state: running;
+            transform: translateY(1);
+            transition: transform 0.5s ease;
+        }
+
+        @keyframes redrect {
+            0% {
+                transform: translateY(2em);
+            }
+
+            15% {
+                transform: translateY(-2em);
+            }
+
+            25%{
+                transform: translateY(2em);
+            }
+
+            35%{
+                transform: translateY(-2em);
+            }
+
+            50%{
+                transform: translateY(2em);
+            }
+
+            75%{
+                transform: translateY(-2em);
+            }
+
+            100%{
+                transform: translateY(2em);
+            }
+        }
+
+        .text9 {
+            position: relative;
+            animation: geeks9 10s infinite;
+            animation-play-state: running;
+        }
+        
+        @keyframes geeks9 {
+            0% {
+                width: 200px;
+                height: 100px;
+                background-color: #7e0000;
+            }
+
+            15%{
+                width: 300px;
+                height: 100px;
+            }
+
+            25%{
+                width: 200px;
+                height: 100px;
+                background-color: #007e06;
+            }
+
+            35%{
+                width: 300px;
+                height: 100px;
+            }
+
+            50%{
+                width: 200px;
+                height: 100px;
+                background-color: #61007e;
+                border-radius: 25%;
+                color: #00ffd5;
+            }
+
+            65%{
+                width: 300px;
+                height: 100px;
+            }
+
+            75%{
+                width: 200px;
+                height: 100px;
+                background-color: #007e73;
+            }
+
+            85%{
+                width: 300px;
+                height: 100px;
+            }
+
+            100%{
+                width: 200px;
+                height: 100px;
+                background-color: #7e0000;
+            }
+
+        }
+
+        .whitebox2 {
+            animation: whiterect2 7s infinite;
+            animation-play-state: running;
+            transform: perspective(1) scaleZ(1) rotateX(0deg);
+            transition: transform 1.0s ease;
+            transform-origin: top right
+        }
+
+        @keyframes whiterect2 {
+            0% {
+                transform: perspective(500px) scaleZ(2) rotateX(50deg);
+            }
+
+            15% {
+                transform: perspective(500px) scaleZ(2) rotateX(90deg);
+            }
+
+            25%{
+                transform: perspective(500px) scaleZ(2) rotateX(100deg);
+            }
+
+            35%{
+                transform: perspective(500px) scaleZ(2) rotateX(50deg);
+            }
+
+            50%{
+                transform: perspective(500px) scaleZ(2) rotateX(0deg);
+            }
+
+            75%{
+                transform: perspective(500px) scaleZ(2) rotateX(180deg);
+            }
+
+            100%{
+                transform: perspective(500px) scaleZ(2) rotateX(0deg);
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -775,12 +911,13 @@ transform-origin: 100% 0%;
         font-size: 50px;" class="text8">Section 2a</div>
         <div style="display:inline-block;align-items: center; width:60px; height:120px; background: red" class="redbox"></div>
     </div>
-    
+
     <div style="background: red; width: 50%; text-align: center;padding: 200px 0;">
         <div style="display:inline-block;
-        font-size: 50px;">Section 3</div>
-        <div style="display:inline-block;align-items: center; width:40px; height:120px; background: white"></div>
+        font-size: 50px;" class="text9">Section 3</div>
+        <div style="display:inline-block;align-items: center; width:40px; height:120px; background: white" class="whitebox2"></div>
     </div>
+    
     <div style="background: orange; width: 100%; text-align: center;padding: 100px 0;">
         <div style="display:inline-block; font-size: 50px;">Footer</div>
         <div style="display:inline-block;align-items: center; width:120px; height:40px; background: green"></div>
