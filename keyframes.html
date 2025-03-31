@@ -14,7 +14,7 @@ margin-left: auto;
 margin-right: auto;
 border-radius: 10%;
 display: inline-block;
-animation: rightarmfunction 30s;
+animation: rightarmfunction 30s infinite;
 animation-iteration-count: 1;
 transform-origin: 100% 0%;
 }
@@ -626,6 +626,108 @@ transform-origin: 100% 0%;
             }
 
         }
+        
+        .blackbox {
+            animation: blackrect 7s infinite;
+            animation-play-state: running;
+            transform-origin: top right;
+        }
+
+        @keyframes blackrect {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            15% {
+                transform: rotate(-120deg);
+            }
+
+            25%{
+                transform: rotate(-140deg);
+            }
+
+            35%{
+                transform: rotate(-100deg);
+            }
+
+            50%{
+                transform: rotate(-80deg);
+            }
+
+            75%{
+                transform: rotate(-120deg);
+            }
+
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+
+        .text8 {
+            position: relative;
+            animation: geeks8 10s infinite;
+            animation-play-state: running;
+        }
+        
+        @keyframes geeks8 {
+            0% {
+                width: 200px;
+                height: 150px;
+                background-color: #00007e;
+                color: #ffffff;
+            }
+
+            15%{
+                width: 200px;
+                height: 150px;
+            }
+
+            25%{
+                width: 200px;
+                height: 150px;
+                background-color: #4141b1;
+                color: #000000;
+                margin: 4%;
+            }
+
+            35%{
+                width: 200px;
+                height: 150px;
+            }
+
+            50%{
+                width: 200px;
+                height: 150px;
+                background-color: #ff7171;
+                color: maroon;
+            }
+
+            65%{
+                width: 200px;
+                height: 150px;
+            }
+
+            75%{
+                width: 200px;
+                height: 150px;
+                background-color: maroon;
+                color: #000000;
+            }
+
+            85%{
+                width: 200px;
+                height: 150px;
+            }
+
+            100%{
+                width: 200px;
+                height: 150px;
+                background-color: #00007e;
+                color: #ffffff;
+            }
+
+        }
+
     </style>
 </head>
 <body>
@@ -665,13 +767,15 @@ transform-origin: 100% 0%;
 
     <div style="background: green; width: 100%; text-align: center;padding: 200px 0;">
         <div style="display:inline-block;font-size: 50px;" class="text7">Place For Introdctory Image/Video</div>
-        <div style="display:inline-block;align-items: center; width:90px; height:60px; background: black"></div>
+        <div style="display:inline-block;align-items: center; width:90px; height:60px; background: black" class="blackbox"></div>
     </div>
+
     <div style="background: blue; width: 50%; float: right; text-align: center;padding: 200px 0;">
         <div style="display:inline-block;
-        font-size: 50px;">Section 2a</div>
-        <div style="display:inline-block;align-items: center; width:60px; height:120px; background: red"></div>
+        font-size: 50px;" class="text8">Section 2a</div>
+        <div style="display:inline-block;align-items: center; width:60px; height:120px; background: red" class="redbox"></div>
     </div>
+    
     <div style="background: red; width: 50%; text-align: center;padding: 200px 0;">
         <div style="display:inline-block;
         font-size: 50px;">Section 3</div>
