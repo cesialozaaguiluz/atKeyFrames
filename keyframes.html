@@ -926,6 +926,42 @@ transform-origin: 100% 0%;
 
         }
 
+        .greenbox2 {
+            animation: greenrect2 7s infinite;
+            animation-play-state: running;
+            transform-origin: top left;
+        }
+
+        @keyframes greenrect2 {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            15% {
+                transform: rotate(-10deg);
+            }
+
+            25%{
+                transform: rotate(-40deg);
+            }
+
+            35%{
+                transform: rotate(10deg);
+            }
+
+            50%{
+                transform: rotate(-30deg);
+            }
+
+            75%{
+                transform: rotate(-10deg);
+            }
+
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -982,7 +1018,7 @@ transform-origin: 100% 0%;
 
     <div style="background: orange; width: 100%; text-align: center;padding: 100px 0;">
         <div style="display:inline-block; font-size: 50px;" class="text10">Footer</div>
-        <div style="display:inline-block;align-items: center; width:120px; height:40px; background: green"></div>
+        <div style="display:inline-block;align-items: center; width:120px; height:40px; background: green" class="greenbox2"></div>
     </div>
 </body>
 </html>
